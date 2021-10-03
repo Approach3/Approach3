@@ -18,11 +18,15 @@
     font-size: 32px;
     font-family: monospace, Arial;
    }
+   button {
+    width: 80%;
+    border-radius: 13px;
+   }
    </style>
 </head>
 <body>
 <script>
-let countEl = document.getElementById(count-el);
+let countEl = document.getElementById("count-el");
 let count = 0;
 function inc() {
    count = count + 1;
@@ -31,6 +35,9 @@ function inc() {
 function save() {
    console.log(count);
 }
+function reset() {
+   count = 0;
+}
 </script>
 <h1>JS Counter</h1>
 <br>
@@ -38,7 +45,10 @@ function save() {
 <br>
 <button id="add" onclick="inc()">ADD Count</button>
 <br>
-<div style="height: 80px;"></div>
+<div style="height: 16px;"></div>
 <button id="save" onclick="save()">SAVE</button>
+<button id="reset" onclick="reset()">RESET</button>
+<br>
+<div style="height: 16px;"></div>
 </body>
 </html>
