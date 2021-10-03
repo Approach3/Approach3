@@ -22,14 +22,22 @@
 </head>
 <body>
 <script>
-
+countEl = document.getElementById(count-el);
+let count = 0;
+function inc() {
+   count = count + 1;
+   countEl.InnerText = count;
+}
+function save() {
+   console.log(count);
+}
 </script>
 <h1>JS Counter</h1>
 <br>
-<h2 id="count">0</h2>
+<h2 id="count-el">0</h2>
 <br>
 <button id="add" onclick="">ADD Count</button>
-<br>
+<br style="height: 80px;">
 <button id="save" onclick="">SAVE</button>
 </body>
 </html>
